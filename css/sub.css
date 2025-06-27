@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import url("base.css");
+
+a{color: #333; text-decoration: none;}
+
+/* sub 공통 메인베너 서식 */
+.main_banner{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+.main_banner_inner{
+  width: 95%;
+  text-align: center;
+  color: var(--color_sub2);
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  opacity: 1;
+  animation: opacity 2s 0s;
+}
+@keyframes opacity{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+.main_banner_inner > h2{
+  font-size: var(--sizeFont_PC_h2);
+  font-family: var(--font_main_eng_bold);
+}
+.main_banner_inner > p{
+  font-size: var(--sizeFont_PC_pLarge22);
+  font-family: var(--font_sub);
+  width: 40%; margin: 0 auto;
+  padding-top: 18px;
+  line-height: 24px;
+}
+
+/* 스크롤 아이콘 서식 */
+.ico_scroll{
+  width: 32px; height: 48px;
+  border-radius: 50px; border: 1px solid var(--color_sub2);
+  position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+}
+.ico_scroll::before{
+  content: "";
+  display: block;
+  width: 10px; height: 10px;
+  border-radius: 50%; border: 1px solid var(--color_sub2);
+  position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+}
+@keyframes scroll{
+  0%{bottom: 50px;}
+  100%{bottom: 60px;}
+}
+.scroll{
+  font-size: var(--sizeFont_PC_pSmall14);
+  color: var(--color_sub2);
+  text-transform: uppercase;
+  position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+  animation: scroll 1s 0s infinite ease-in-out alternate;
+}
+
+/* 태블릿 */
+@media screen and (min-width:768px) and (max-width:1024px) {
+  /* 서브 메인 배너 */
+
+  .main_banner_inner > h2{
+    font-size: var(--sizeFont_T_h2);
+  }
+  .main_banner_inner > p{
+    font-size: var(--sizeFont_TM_pLarge16);
+  }
+  .scroll{
+    display: none;
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+  /* 서브 메인 배너 */
+
+  .main_banner_inner > h2{
+    font-size: var(--sizeFont_M_h2);
+  }
+  .main_banner_inner > p{
+    font-size: var(--sizeFont_TM_pLarge16);
+    width: 75%; margin: 0 auto;
+  }
+  .scroll{
+    display: none;
+  }
+}

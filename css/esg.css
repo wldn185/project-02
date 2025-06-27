@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+@import url("base.css");
+
+/* esg메인배너 */
+section > h2{display: none;}
+.esg_img{
+  background-image: url(../images/esg/esg_main.jpg);
+  background-repeat: no-repeat; object-fit: cover;
+}
+
+/* 탭컨텐츠  전체 */
+.esg_tab{
+  width: 100%;
+  background-color: #fff;
+  position: relative; top: 100vh;
+}
+.esg_tab .esg_inner{
+  width: 95%; margin: 0px auto;
+  padding-top: 100px;
+}
+
+/* esg선택옵션 */
+.esg_select{
+  display: inline-block;
+  width: 300px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+  position: relative; left: 50%; transform: translateX(-50%);
+  color: var(--color_sub3);
+  border-bottom: 1px solid var(--color_sub3);
+}
+.esg_select i{float: right;}
+
+.esg_select_list{
+  position: absolute; left: 50%; transform: translateX(-50%);
+  font-size: 1.6rem;
+  width: 300px;
+  background-color: var(--color_sub1);
+  text-align: center;
+  display: none;
+  z-index: 1;
+}
+.esg_select_list > li{
+  height: 48px;
+  line-height: 48px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.esg_select_list li:hover{
+  background-color: var(--color_main);
+}
+.esg_select_list li:hover a{
+  color: var(--color_sub2);
+}
+
+
+/* 탭콘텐츠 */
+.tab_con{
+  width: 100%; height: 780px;
+  margin-top: 50px;
+  position: relative;
+}
+.tab_con h3{display: none;}
+.tab_con > ul{
+  display: flex;
+  justify-content: center;
+}
+.tab_con > ul > li{
+  list-style: none;
+  width: 140px;
+}
+.tab_con > ul > li > a{
+  color: var(--color_sub3); text-decoration: none; 
+  display: block; line-height: 50px;
+  font-family: var(--font_main_eng_bold);
+  font-size: 1.8rem;
+  text-align: center;
+}
+.tab_con > ul > li > a:hover{color: var(--color_main)}
+.tab_con > ul > li > div{
+  width: 100%;
+  position: absolute; left: 0px;
+  display: none;
+}
+.tab_con > ul > li > div > p{
+  font-size: 2rem;
+  margin: 0 auto;
+  width: 95%; padding: 20px 0;
+  text-align: center;
+}
+.viewmore{
+  position: absolute;
+  padding-top: 50px;
+  left: 50%; transform: translate(-50%);
+}
+.tab_con > ul > li > div > .img{
+  width: 100%; height: 440px;
+  object-fit: cover;
+}
+.tab_con > ul > li > div > .img > h3{
+  font-size: var(--sizeFont_PC_h3);
+  font-family: var(--font_main_eng_bold);
+  color: var(--color_sub2);
+  display: inline-block;
+  width: 500px;
+  position: absolute;
+  top: 138px; left: 5%;
+}
+.tab_con > ul > li > div > .img > h3::after{
+  content: "";
+  display: block;
+  width: 100%; height: 4px;
+  background-color: var(--color_main);
+  object-fit: cover;
+}
+.tab_con > ul > li:first-child > div > .img{
+  background-image: url(../images/esg/esg_e.jpg);
+}
+.tab_con > ul > li:nth-child(2) > div > .img{
+  background-image: url(../images/esg/esg_s.jpg);
+}
+.tab_con > ul > li:last-child > div > .img{
+  background-image: url(../images/esg/esg_g.jpg);
+}
+.tab_con > ul > li:first-child > div{display: block;}
+.act{color: var(--color_main) !important;}
+
+/* 보고서 */
+.esg_report{
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  top: 100vh;
+  padding-bottom: 50px;
+}
+.esg_report .inner{width: 1200px; margin: 0 auto;}
+.esg_report h3{
+  font-size: 3.5rem;
+  font-family: var(--font_main_eng_bold);
+  text-align: center;
+  padding-top: 80px;
+}
+.esg_report h4{display: none;}
+.esg_report article{display: flex; padding-top: 80px; opacity: 0;}
+.esg_report article > img{width: 300px; height: 320px;}
+.esg_report article > div{position: relative;}
+.esg_report article > div > p{
+  font-size:2rem;
+  line-height: 32px;
+  text-align: justify;
+  padding: 10px 0 0 40px;
+}
+.esg_report article > div > a > img{
+  width: 100px;
+  position: absolute;
+  bottom: 10px; left: 50px;
+}
+footer{
+  margin-top:100vh;
+}
+
+/* ------------------------------------------------------------------- */
+/* 미디어쿼리 */
+/* 태블릿 해상도 */
+@media screen and (min-width:768px) and (max-width:1200px){
+  /* esg선택옵션 */
+  .esg_select{
+    width: 200px;
+    height: 30px;
+  }
+  .esg_select_list{
+    width: 200px;
+  }
+  .esg_select_list > li{
+    height: 40px;
+    line-height: 40px;
+  }
+
+  /* 탭콘텐츠 */
+  .tab_con > ul > li > div > .img > h3{
+    width: 300px;
+    font-size: 4rem;
+  }
+  /* 보고서 */
+  /* .esg_report{height: 170vh;} */
+  .esg_report .inner{width: 95%;}
+  .esg_report h3{font-size:3rem; padding-top: 50px;}
+  .esg_report article{display: block; padding-top: 20px; opacity: 0;}
+  .esg_report article::after{
+    clear: both;
+    display: block;
+    content: "";
+  }
+  .esg_report article > img{width: 100%; height: 300px; object-fit: cover;}
+  .esg_report article > div > p{
+    font-size: 2rem;
+    padding: 10px 0;
+  }
+  .esg_report article > div > a > img{
+    width: 100px;
+    position: static;
+    float: right;
+  }
+
+  .viewmore a{
+    position:absolute;
+    left:50%;   
+    transform: translateX(-50%);
+  }
+  .viewmore img{transform: scale(0.8) !important;}
+
+}
+
+/* 모바일 해상도 */
+@media screen and (max-width:767px){
+  /* esg선택옵션 */
+  .esg_select{
+    width: 95%;
+    height: 30px;
+  }
+  .esg_select_list{
+    width: 95%;
+  }
+  .esg_select_list > li{
+    height: 40px;
+    line-height: 40px;
+  }
+
+  /* 텝콘텐츠 */
+  .tab_con > ul > li > div > .img > h3{
+    width: 200px;
+    text-align: center;
+    left: 50%; top: 40%; transform: translateX(-50%);
+    font-size: 3rem;
+  }
+  .tab_con > ul > li > div > p{
+    font-size: 1.6rem;
+    line-height: 170%;
+    text-align: left;
+  }
+  .viewmore{padding-top: 10px;}
+  
+  /* 보고서 */
+  .esg_report .inner{width: 95%;}
+  .esg_report h3{font-size: 2.5rem}
+  .esg_report article{display: block; padding-top: 20px; opacity: 0;}
+  .esg_report article::after{
+    clear: both;
+    display: block;
+    content: "";
+  }
+  .esg_report article > img{width: 100%; height: 300px; object-fit: cover;}
+  .esg_report article > div > p{
+    font-size: 1.4rem;
+    line-height: 22px;
+    padding: 10px 0;
+  }
+  .esg_report article > div > a > img{
+    width: 80px;
+    position: static;
+    float: right;
+  }
+  .viewmore a{
+    position:absolute;
+    left:50%;   
+    transform: translateX(-50%);
+  }
+  .viewmore img{transform: scale(0.7) !important;}
+}

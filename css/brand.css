@@ -1,0 +1,250 @@
+@charset "utf-8";
+@import url("base.css");
+
+/* 브랜드 메인 배너 */
+.main_banner_brand {
+  background-image: url(../images/brand/main_brand.jpg);
+  background-repeat: no-repeat; object-fit: cover;
+}
+
+/* 브랜드 갤러리*/
+/* 브랜드 갤러리 nav */
+.brand_cont_box {
+  position: relative;
+  top: 100vh;
+  width: 100%;
+  background-color: var(--color_sub1);
+  text-align: center;
+}
+.brand_cont_box h3{display: none;}
+.brand_select_btn {
+  display: none;
+}
+
+.brand_cont_nav {
+  width: 100%;
+  background-color: var(--color_sub2);
+}
+
+.brand_cont_nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.brand_cont_nav li {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.brand_cont_nav li a:hover {
+  border-bottom: 1px solid var(--color_sub3);
+}
+
+.brand_act {
+  color: var(--color_main);
+}
+
+/* 브랜드 갤러리 콘텐츠 */
+.brand_gallery {
+  display: grid;
+  width: 1200px;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(3, 353px);
+  margin: 0 auto;
+  padding: 135px 0;
+}
+
+.brand_gallery li {
+  position: relative;
+  width: 353px;
+  height: 240px;
+  margin: 10px 20px;
+  background-color: var(--color_sub2);
+  overflow: hidden;
+}
+
+.brand_gallery li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.brand_gallery_hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 100px 15px;
+  line-height: 1.4;
+  font-size: var(--sizeFont_PC_pMedium16);
+  color: var(--color_sub1);
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.4s;
+}
+
+.brand_gallery_hover p:first-child {
+  margin-bottom: 10px;
+}
+
+.brand_gallery li:hover .brand_gallery_hover {
+  box-sizing: border-box;
+  opacity: 1;
+}
+
+/* 태블릿 */
+@media screen and (min-width:768px) and (max-width:1200px) {
+
+  /* 태블릿 갤러리 */
+  /* 태블릿 브랜드 갤러리 nav */
+  .brand_cont_nav ul {
+    display: flex;
+    width: 45%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .brand_cont_nav li {
+    font-size: var(--sizeFont_TM_pLarge16);
+  }
+
+  /* 태블릿 브랜드 갤러리 콘텐츠 */
+  .brand_gallery {
+    width: 100%;
+    grid-template-columns: repeat(3, 30%);
+    padding: 100px 0;
+  }
+
+  .brand_gallery li {
+    width: 100%; margin: 10px auto;
+    height: 200px;
+  }
+
+  .brand_gallery li img {
+    transform: scale(0.7) translate(-70%, -60%);
+  }
+
+  .brand_gallery_hover {
+    padding: 70px 10px;
+    font-size: var(--sizeFont_TM_pMedium14);
+  }
+
+  .brand_gallery_hover p:first-child {
+    margin-bottom: 8px;
+  }
+
+}
+
+/* 태블릿 끝 */
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+  /* 모바일 갤러리 */
+  /* 모바일 브랜드 갤러리 nav */
+
+  .brand_cont_nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+    background-color: var(--color_sub2);
+    z-index: 1;
+    border-bottom: 1px solid var(--color_sub3);
+  }
+
+  .brand_select_btn {
+    display: block;
+    position: relative;
+    width: 95%;
+    height: 30px;
+    line-height: 30px;
+    padding: 15px 0;
+    margin: 0 auto;
+    font-size: var(--sizeFont_TM_pMedium14);
+    color: var(--color_main);
+
+    cursor: pointer;
+  }
+
+  .brand_select_btn i {
+    position: absolute;
+    top: 15px;
+    left: calc(100% - 30px);
+    line-height: 30px;
+  }
+
+  .brand_select_btn i.fa-plus {
+    display: block;
+  }
+
+  .brand_select_btn i.fa-minus {
+    display: none;
+  }
+
+  .brand_cont_nav ul {
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  .brand_cont_nav li {
+    padding: 15px 10px;
+    line-height: 30px;
+    font-size: var(--sizeFont_TM_pMedium14);
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .brand_cont_nav li:first-child {
+    border-top: 1px solid var(--color_sub3);
+  }
+
+  .brand_cont_nav li a {
+    display: block;
+    height: 30px;
+  }
+
+  .brand_cont_nav li a:hover {
+    border-bottom: none;
+  }
+
+  .brand_act {
+    color: var(--color_main);
+  }
+
+  /* 모바일 브랜드 갤러리 콘텐츠 */
+  .brand_gallery {
+    width: 100%;
+    grid-template-columns: repeat(2, 45%);
+    padding: 80px 0;
+  }
+
+  .brand_gallery li {
+    width: 100%;
+    height: 200px;
+    margin: 10px 0px;
+  }
+
+  .brand_gallery li img {
+    transform: scale(0.6) translate(-80%, -70%);
+  }
+
+  .brand_gallery_hover {
+    padding: 50px 15px;
+    font-size: var(--sizeFont_TM_pMedium14);
+  }
+
+  .brand_gallery_hover p:first-child {
+    margin-bottom: 8px;
+  }
+}
+
+/* 모바일 끝 */

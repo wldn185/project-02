@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* 폰트 지정 */
+
+/* Noto Sans KR */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+  /* LGEIHeadline */
+@font-face {
+  font-family: "LGEIHeadline";
+  src: url('./font/OTF/LGEIHeadline-Regular.otf'),
+    url('./font/TTF/LGEIHeadlineTTF-Regular.ttf'),
+    url('./font/WOFF/LGEIHeadlineTTF-Regular.woff'),
+    url('./font/WOFF2/LGEIHeadlineTTF-Regular.woff2');
+}
+
+/* LGEIHeadline-Bold */
+@font-face {
+  font-family: "LGEIHeadline-Bold";
+  src: url('./font/OTF/LGEIHeadline-Bold.otf'),
+    url('./font/TTF/LGEIHeadlineTTF-Bold.ttf'),
+    url('./font/WOFF/LGEIHeadlineTTF-Bold.woff'),
+    url('./font/WOFF2/LGEIHeadlineTTF-Bold.woff2');
+}
+
+  /* LGEIHeadline-Thin */
+@font-face {
+  font-family: "LGEIHeadline-Thin";
+  src: url('./font/OTF/LGEIHeadline-Thin.otf'),
+    url('./font/TTF/LGEIHeadlineTTF-Thin.ttf'),
+    url('./font/WOFF/LGEIHeadlineTTF-Thin.woff'),
+    url('./font/WOFF2/LGEIHeadlineTTF-Thin.woff2');
+}
+
+  /* LGEIText */
+@font-face {
+  font-family: "LGEIText";
+  src: url('./font/OTF/LGEIText-Regular.otf'),
+    url('./font/TTF/LGEIText-Regular.ttf'),
+    url('./font/WOFF/LGEIText-Regular.woff'),
+    url('./font/WOFF2/LGEIText-Regular.woff2');
+}
+
+:root {
+  /* 루트 컬러 */
+  --color_main: #a50034;
+  --color_sub1: #f0ece4;
+  --color_sub2: #ffffff;
+  --color_sub3: #333333;
+  --color_sub4: #797979;
+
+  /* 루트 폰트 */
+  --font_main_eng: "LGEIHeadline", arial, sans-serif;
+  --font_main_eng_bold: "LGEIHeadline-Bold", arial, sans-serif;
+  --font_main_eng_Thin: "LGEIHeadline-Thin", arial, sans-serif;
+  --font_main_kr: "Noto Sans KR", arial, sans-serif;
+  --font_sub: "LGEIText", arial, sans-serif;
+
+  /* 루트 사이즈 */
+  /* PC */
+  --sizeFont_PC_h2: 8rem;
+  --sizeFont_PC_h3: 6rem;
+  --sizeFont_PC_h4: 5rem;
+  --sizeFont_PC_h5: 3.2rem;
+  --sizeFont_PC_pLarge22: 2.2rem;
+  --sizeFont_PC_pMedium16: 1.6rem;
+  --sizeFont_PC_pSmall14: 1.4rem;
+  --sizeFont_PC_footer13: 1.3rem;
+
+  /* 태블릿 */
+  --sizeFont_T_h2: 4rem;
+  --sizeFont_T_h3: 2rem;
+  --sizeFont_T_h4: 1.8rem;
+
+  /* 모바일 */
+  --sizeFont_M_h2: 3.2rem;
+  --sizeFont_M_h3: 1.8rem;
+  --sizeFont_M_h4: 1.6rem;
+
+  /* 태블릿 & 모바일 공통 */
+  --sizeFont_TM_pLarge16: 1.6rem;
+  --sizeFont_TM_pMedium14: 1.4rem;
+  --sizeFont_TM_pSmall12: 1.2rem;
+}
+
+
+/* rem 기준 사이즈 */
+html {
+  font-size: 10px;
+}
+
+body {
+  color: #333333;
+  font-family: var(--font_sub);
+}
+
+
+
+/* 기본 서식 지정 끝 */

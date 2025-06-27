@@ -1,0 +1,302 @@
+/* main.css */
+
+@charset "utf-8";
+
+/* 메인 공통서식 */
+section{max-width:100vw; min-height:100vh;}
+.main_inner{
+  width:1400px; height: 100%;
+  margin:0 auto;
+}
+/* 1. 메인슬라이드 배너 서식 */
+.sect1_main_slide{
+  width:100vw;height:100vh;
+  /* position:fixed;
+  left:0px;top:0px; */
+  overflow: hidden;
+  z-index: 1;
+}
+.sect1_main_slide h2{display: none;}
+.sect1_main_slide video{
+  min-width:100vw; min-height: 100vh;
+  /* width:100%; height:100%; */
+  /* transform: scale(1.1); */
+  object-fit: cover;
+  border:none;
+  outline: none;
+
+  position:relative;
+  top:-50px;
+}
+/* 2. 회사소개 섹션 */
+.sect2_about{
+  height:110vh;
+  text-align: center;
+}
+.sect2_about .main_inner{position: relative;}
+.sect2_about h2{display: none;}
+.sect2_about .sect2_bg{
+  width:1400px; height:500px; 
+  position:absolute;
+  top:100px; 
+  left:0px;
+  z-index: 2;
+}
+.sect2_about .sect2_bg p{
+  font-size: 8rem;
+  font-family: var(--font_main_eng_bold);
+  line-height: 13rem;
+}
+.sect2_about .sect2_bg p:last-of-type{
+  font-size: 1.8rem;
+}
+.sect2_about .sect2_move{
+  width:200px;height:200px; 
+  position:absolute;
+  top:20%; 
+  left:50%;
+  z-index: 1;
+  transform:translateX(-50%);
+}
+.sect2_about .sect2_move img{
+  width:100%;
+  height:100%;
+}
+
+/* 3. ESG 섹션 */
+.sect3_esg{
+  background-color: #525252;
+  height:100vh;
+}
+.sect3_esg h2{display: none;}
+.sect3_esg .main_inner{width:100%;display: flex; background-color: #525252;}
+
+
+
+.esg_box{
+  text-align: center;
+  color:#fff;
+  transition:0.3s;
+  background-position: center center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0.8);
+}
+.esg_box_inner{
+  width:90%; height: 300px;
+  margin:0px auto;
+  /* margin-top:50%; */
+  margin-top:20rem;
+}
+.esg_box h4{
+  font-size:var(--sizeFont_PC_h4);
+  margin-bottom:1rem;
+}
+.esg_box p{
+  font-size:1.8rem;
+  margin-bottom:1rem;
+}
+.esg_box img{transform: scale(0.8);}
+.esg_box_hover{
+  width:44.3% !important;
+  filter:grayscale(0.4);
+} 
+/* 27.85% */
+body{z-index: -1;}
+.esg_box.box1{
+  background-image: url('../images/main/main_esg1.jpg');
+}
+.esg_box.box2{
+  background-image: url('../images/main/main_esg6.jpg');
+}
+.esg_box.box3{
+  background-image: url('../images/main/main_esg3.jpg');
+}
+
+
+
+/* 4. 브랜드 섹션 */
+.sect4_brand{height:130vh;}
+.sect4_brand article{
+  background-color: green;
+  width:100%; height: 100%;
+}
+.sect4_brand h2{
+  font-size:6rem; 
+  font-family: var(--font_main_eng_bold);
+  text-align: center; 
+  padding:2rem 0rem;
+}
+.sect4_brand .slide_container{
+  background-color: beige;
+  width:1400px;height:500px;
+  margin:0 auto;
+  overflow-x: hidden;
+  position: relative;
+}
+.sect4_brand .slide_wrapper{
+  /* background-color: #ccc; */
+  /* width: 300%; */
+  /* position: absolute; */
+  /* left:-1000px; top:10px; */
+  
+}
+.sect4_brand .slide{
+  background-color: #525252;
+  display: inline-block;
+  width:250px; height:400px; margin-right:10px;
+  /* display: inline-block; */
+  /* position:absolute;
+  left:1000px; top:0px; */
+  z-index: 1000;
+}
+
+.focus_slide{width:280px !important; height:500px !important;}
+
+/* 콘트롤 버튼 서식 */
+.sect4_brand .c_btn > ul{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  /* position: absolute; */
+  /* left: 50%; */
+  /* top: 600px; */
+  /* transform: translateX(-50%); */
+  z-index: 1000;
+}
+
+.sect4_brand .c_btn ul {
+  /* text-align: center; */
+}
+
+.sect4_brand .c_btn > ul li {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  /* border:3px solid #000; */
+  margin: 0px 5px;
+}
+
+.c_act {
+  background-color: #f00 !important;
+}
+
+
+
+/* 5. 광고 섹션 */
+.sect5_ad{
+  /* background-color: red; */
+  width:100%;
+  height:500px;
+}
+.sect5_ad h2{display:none;}
+.sect5_ad a img{width:100%; height:100%;}
+
+/* 6. 게시판 섹션 */
+.sect6_board{
+  height:650px;
+  border-top: 1px solid var(--color_sub3);
+  border-bottom: 1px solid var(--color_sub3);
+}
+.sect6_board .main_inner{
+  height:100%; 
+  display:flex;
+  background-color: var(--color_sub2);
+}
+.sect6_board .board_leftbox{
+  width:30%;
+  line-height: 2.4rem;
+  border-right: 1px solid var(--color_sub3);
+}
+.sect6_board .board_leftbox > div{
+  width:70%;
+  margin:0 auto;
+  margin-top:150px;
+}
+.sect6_board .board_leftbox h4{
+  font-size:var(--sizeFont_PC_h4);
+  font-family: var(--font_main_eng_bold);
+}
+.sect6_board .board_leftbox p{font-size: 1.6rem; margin:2rem 0rem;}
+.sect6_board .board_leftbox a img{margin-top:4rem;}
+
+.sect6_board .board_rightbox{
+  width:70%;
+  height: 100%;
+
+}
+/* 공지사항 스와이퍼 서식 */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.mySwiper_notice .swiper-wrapper{
+  height:60%;
+  margin-top:150px !important;
+}
+.notice_slide {
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notice_slide img {
+  display: block;
+  width: 100%;
+  height: 32rem;
+  object-fit: cover;
+}
+.mySwiper_notice .swiper-pagination{
+  width:70vw !important;
+  top:99% !important;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: var(--color_main) !important;
+}
+
+
+
+/* 7. 유튜브 섹션 */
+.sect7_youtube{
+  height:100vh;
+  text-align: center;
+}
+.sect7_youtube h4{
+  font-size:var(--sizeFont_PC_h4);
+  font-family: var(--font_main_eng_bold);
+  margin:18rem 0rem 2rem;
+}
+.sect7_youtube p{
+  font-size: var(--sizeFont_PC_pMedium16);
+  margin-bottom:3rem;
+}
+.sect7_grid{
+  width:1200px; height: 600px;
+  margin:0px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 250px);
+  grid-gap: 10px;
+  grid-template-areas: 
+    "area1 area2 area3 area4"
+    "area5 area6 area7 area8"
+  ;
+}
+.sect7_youtube > .sect7_grid iframe{width:300px;}
+.grid_area{width:300px;}
+.grid_area.area1{grid-area: area1;}
+.grid_area.area2{grid-area: area2;}
+.grid_area.area3{grid-area: area3;}
+.grid_area.area4{grid-area: area4;}
+.grid_area.area5{grid-area: area5;}
+.grid_area.area6{grid-area: area6;}
+.grid_area.area7{grid-area: area7;}
+.grid_area.area8{grid-area: area8;}
+.grid_area p{
+  font-size:1.4rem;
+  text-align: left;
+}

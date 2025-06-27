@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LG생활건강 홈페이지</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
+  <!-- 1. css 초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <!-- 2. base 서식 -->
+  <!-- <link rel="stylesheet" href="./css/base.css" type="text/css"> -->
+  <!-- 3. common 서식 -->
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <!-- 4. main 서식 -->
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <!-- 5. 서브페이지 공통 서식 -->
+  <!-- <link rel="stylesheet" href="./css/sub.css" type="text/css"> -->
+  <!-- 6. 회사소개페이지 서식 -->
+  <!-- <link rel="stylesheet" href="./css/about.css" type="text/css"> -->
+  <!-- 7. 브랜드페이지 서식 -->
+  <!-- <link rel="stylesheet" href="./css/brand.css" type="text/css"> -->
+  <!-- 8. esg페이지 서식 -->
+  <!-- <link rel="stylesheet" href="./css/esg.css" type="text/css"> -->
+  <!-- 아이콘폰트 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- swiper 플러그인 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- 1.제이쿼리 라이브러리 연결 -->
+  <script src="./script/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <!-- 2. 제이쿼리 메인 -->
+  <script defer src="./script/common.js"></script>
+  <script defer src="./script/main.js"></script>
+  <!-- 3. 제이쿼리 쿠키플러그인 -->
+  <script src="./script/jquery.cookie.js"></script>
+  <!-- Swiper JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- 헤더영역 -->
+  <header>
+    <!-- 메인로고 -->
+    <h1>
+      <a href="index.html" title="메인페이지로 바로가기">
+        <img src="./images/logo.png" alt="상단로고">
+      </a>
+    </h1>
+    <!-- 모바일 로그인 버튼 -->
+    <a href="#none" title="로그인"><i class="fa-solid fa-user"></i></a>
+    <!-- 모바일 토글버튼 -->
+    <label for="toggle" id="label_toggle">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <input type="checkbox" id="toggle">
+    <!-- 모바일 내비게이션 -->
+    <nav class="m_gnb">
+      <label for="toggle" class="fas fa-times"><span>닫기</span></label>
+      <!-- 검색폼 -->
+      <fieldset>
+        <legend>검색</legend>
+        <input type="search" id="m_search" placeholder="검색어" maxlength="50">
+        <label for="m_search" class="fas fa-search"><span>검색버튼</span></label>
+      </fieldset>
+      <!-- 모바일 내비게이션 내부 -->
+      <ul class="m_gnb_inner">
+        <li><a href="#none" title="회사소개">회사소개<i class="fas fa-angle-down"></i></a>
+          <ul class="m_sub">
+            <li><a href="about.html" title="회사소개">회사소개</a></li>
+            <li><a href="#" title="사업분야">사업분야</a></li>
+            <li><a href="#" title="연구개발">연구개발</a></li>
+            <li><a href="#" title="글로벌">글로벌</a></li>
+            <li><a href="#" title="CI/BI">CI/BI</a></li>
+            <li><a href="#" title="인재채용">인재채용</a></li>
+          </ul>
+        </li>
+        <li><a href="#none" title="브랜드">브랜드<i class="fas fa-angle-down"></i></a>
+          <ul class="m_sub">
+            <li><a href="brand.html" title="브랜드소개">브랜드소개</a></li>
+            <li><a href="#" title="화장품">화장품</a></li>
+            <li><a href="#" title="메이크업">메이크업</a></li>
+            <li><a href="#" title="컨셔스뷰티">컨셔스뷰티</a></li>
+            <li><a href="#" title="메티컬뷰티">메티컬뷰티</a></li>
+            <li><a href="#" title="바디케어">바디케어</a></li>
+            <li><a href="#" title="남성케어">남성케어</a></li>
+            <li><a href="#" title="뷰티컬렉션">뷰티컬렉션</a></li>
+          </ul>
+        </li>
+        <li><a href="#none" title="제품소개">제품소개<i class="fas fa-angle-down"></i></a>
+          <ul class="m_sub">
+            <li><a href="#" title="케어용품">케어용품</a></li>
+            <li><a href="#" title="생활용품">생활용품</a></li>
+            <li><a href="#" title="음료">음료</a></li>
+          </ul>
+        </li>
+        <li><a href="#none" title="esg">ESG<i class="fas fa-angle-down"></i></a>
+          <ul class="m_sub">
+            <li><a href="esg.html" title="esg">ESG</a></li>
+            <li><a href="#" title="기후변화대응">기후변화대응</a></li>
+            <li><a href="#" title="사회환경가치제품">사회환경가치제품</a></li>
+            <li><a href="#" title="환경안전경영">환경안전경영</a></li>
+            <li><a href="#" title="사회책임">사회책임</a></li>
+          </ul>
+        </li>
+        <li><a href="#none" title="공지사항">공지사항<i class="fas fa-angle-down"></i></a>
+          <ul class="m_sub">
+            <li><a href="http://wldn185.dothome.co.kr/bbs/bbs/board.php?bo_table=notice2" title="공지사항">공지사항</a></li>
+            <li><a href="#" title="보도자료">보도자료</a></li>
+            <li><a href="#" title="광고">광고</a></li>
+            <li><a href="#" title="생활문화정보">생활문화정보</a></li>
+            <li><a href="#" title="news">NEWS</a></li>
+            <li><a href="#" title="lg생활건강">LG생활건강</a></li>
+          </ul>
+        </li>
+        <li><a href="#none" title="고객센터">고객센터<i class="fas fa-angle-down"></i></a>
+          <ul class="m_sub">
+            <li><a href="#" title="고객응대절차">고객응대절차</a></li>
+            <li><a href="#" title="간편해결">간편해결</a></li>
+            <li><a href="#" title="고객의소리">고객의소리</a></li>
+            <li><a href="#" title="FAQ">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a href="index.html"><img src="./images/logo2.png" alt="로고"></a>
+      <div class="h_lang">
+        <i class="fa-solid fa-globe" title="언어설정"></i>
+        <ul>
+          <li class="h_lang_act">KR</li>
+          <li>EN</li>
+          <li>CN</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 메인내비게이션 -->
+    <nav class="gnb">
+      <ul>
+        <!-- 회사소개 2단메뉴 -->
+        <li class="menu menu_about">
+          <a class="menu_name" href="about.html" title="회사소개페이지로 바로가기">회사소개</a>
+          <div class="sub_menu">
+            <div class="sub_leftbox">
+              <h5>회사소개</h5>
+              <p>아모레퍼시픽의 브랜드는 전통적인 뷰티의 영역을 과감히 넘고자 노력합니다. 창조적인 아이디어에 기술 혁신을 더해 효능의 가치를 높인 차세대 뷰티 제품을 만들고, 건강한 삶을 돌보기 위한 솔루션을 제안합니다. 전 세계 고객과 직접 소통하며 아름다움을 향한 여정을 이어갑니다.</p>
+              <a href="about.html" class="btn_viewmore"><img src="./images/button/btn_viewmore.png" alt="더보기"></a>
+            </div>
+            <span class="vertical_line"></span>
+            <div class="sub_rightbox">
+              <ul>
+                <li>
+                  <a href="#none" title="회사소개">회사소개 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner act">
+                    <li><a href="#none" title="회사개요">회사개요</a></li>
+                    <li><a href="#none" title="수상내역">수상내역</a></li>
+                    <li><a href="#none" title="연혁">연혁</a></li>
+                    <li><a href="#none" title="사업장소소개">사업장소소개</a></li>
+                    <li><a href="#none" title="전국매장찾기">전국매장찾기</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="사업분야">사업분야 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="beautiful">beautiful</a></li>
+                    <li><a href="#none" title="healthy">healthy</a></li>
+                    <li><a href="#none" title="refreshing">refreshing</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="연구개발">연구개발 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="Innovation">Innovation</a></li>
+                    <li><a href="#none" title="Formulation R&D">Formulation R&D</a></li>
+                    <li><a href="#none" title="Materials R&D">Materials R&D</a></li>
+                    <li><a href="#none" title="Scent Berry Perfume">Scent Berry Perfume</a></li>
+                    <li><a href="#none" title="Package R&D">Package R&D</a></li>
+                    <li><a href="#none" title="Design R&D">Design R&D</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="글로벌">글로벌 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="미국">미국</a></li>
+                    <li><a href="#none" title="중국">중국</a></li>
+                    <li><a href="#none" title="연혁">연혁</a></li>
+                    <li><a href="#none" title="베트남">베트남</a></li>
+                    <li><a href="#none" title="싱가포르">싱가포르</a></li>
+                    <li><a href="#none" title="캐나다">캐나다</a></li>
+                    <li><a href="#none" title="일본">일본</a></li>
+                    <li><a href="#none" title="태국">태국</a></li>
+                    <li><a href="#none" title="말레이시아">말레이시아</a></li>
+                    <li><a href="#none" title="영국">영국</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="CI/BI">CI/BI <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="CI">CI</a></li>
+                    <li><a href="#none" title="BI">BI</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="인재채용">인재채용 </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!-- 브랜드 2단메뉴 -->
+        <li class="menu menu_brand">
+          <a class="menu_name" href="brand.html" title="브랜드소개페이지로 바로가기">브랜드</a>
+          <div class="sub_menu">
+            <div class="sub_leftbox">
+              <h5>브랜드</h5>
+              <p>아모레퍼시픽의 브랜드는 전통적인 뷰티의 영역을 과감히 넘고자 노력합니다. 창조적인 아이디어에 기술 혁신을 더해 효능의 가치를 높인 차세대 뷰티 제품을 만들고, 건강한 삶을 돌보기 위한
+                솔루션을 제안합니다. 전 세계 고객과 직접 소통하며 아름다움을 향한 여정을 이어갑니다.</p>
+              <a href="brand.html" class="btn_viewmore"><img src="./images/button/btn_viewmore.png" alt="더보기"></a>
+            </div>
+            <span class="vertical_line"></span>
+            <div class="sub_rightbox">
+              <ul>
+                <li>
+                  <div class="sub_rightbox_inner inner_info act">
+                    <a href="#none" title="이미지1"><img src="./images/brand/brand_cont_beautiful_01.png" alt="이미지1"></a>
+                    <a href="#none" title="이미지2"><img src="./images/brand/brand_cont_beautiful_22.png" alt="이미지2"></a>
+                    <a href="#none" title="이미지3"><img src="./images/brand/brand_cont_beautiful_12.png" alt="이미지3"></a>
+                    <a href="#none" title="이미지4"><img src="./images/brand/brand_cont_beautiful_26.png" alt="이미지4"></a>
+                    <a href="#none" title="이미지5"><img src="./images/brand/brand_cont_beautiful_11.png" alt="이미지5"></a>
+                    <a href="#none" title="이미지6"><img src="./images/brand/brand_cont_beautiful_13.png" alt="이미지6"></a>
+                    <a href="#none" title="이미지7"><img src="./images/brand/brand_cont_beautiful_24.png" alt="이미지7"></a>
+                    <a href="#none" title="이미지8"><img src="./images/brand/brand_cont_beautiful_15.png" alt="이미지8"></a>
+                    <a href="brand.html" title="브랜드페이지로 바로가기"><img src="./images/button/btn_more_redline.png"
+                        alt="더보기"></a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#none" title="화장품">화장품 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="더후">더후</a></li>
+                    <li><a href="#none" title="The saga of Soo">The saga of Soo</a></li>
+                    <li><a href="#none" title="OHUI">OHUI</a></li>
+                    <li><a href="#none" title="숨37">숨37</a></li>
+                    <li><a href="#none" title="belif">belif</a></li>
+                    <li><a href="#none" title="the therapy">the therapy</a></li>
+                    <li><a href="#none" title="VDL">VDL</a></li>
+                    <li><a href="#none" title="ISA KNOX">ISA KNOX</a></li>
+                    <li><a href="#none" title="Sooryehan">Sooryehan</a></li>
+                    <li><a href="#none" title="BEAUTE">BEAUTE</a></li>
+                    <li><a href="#none" title="OURWHY">OURWHY</a></li>
+                    <li><a href="#none" title="YEHAWDAM">YEHAWDAM</a></li>
+                    <li><a href="#none" title="Dr.Belmeur">Dr.Belmeur</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="메이크업">메이크업 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="CODE glokolor">CODE glokolor</a></li>
+                    <li><a href="#none" title="TPSY">TPSY</a></li>
+                    <li><a href="#none" title="VDIVOV">VDIVOV</a></li>
+                    <li><a href="#none" title="Glint">Glint</a></li>
+                    <li><a href="#none" title="fmgt">fmgt</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="컨셔스뷰티">컨셔스뷰티 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="UGLY LOVELY">UGLY LOVELY</a></li>
+                    <li><a href="#none" title="freshian">freshian</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="메디컬뷰티">메디컬뷰티 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="CNP Laboratory">CNP Laboratory</a></li>
+                    <li><a href="#none" title="CNP Rx">CNP Rx</a></li>
+                    <li><a href="#none" title="CARE+ ZONE">CARE+ ZONE</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="바디케어">바디케어 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="BEYOND">BEYOND</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="남성케어">남성케어 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="VONIN">VONIN</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="뷰티컬렉션">뷰티컬렉션 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="Nature Collection">Nature Collection</a></li>
+                    <li><a href="#none" title="생활정원">생활정원</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </li>
+        <!-- 제품소개 2단메뉴 -->
+        <li class="menu menu_product">
+          <a class="menu_name" href="product.html" title="제품소개페이지로 바로가기">제품소개</a>
+          <div class="sub_menu">
+            <div class="sub_leftbox">
+              <h5>제품소개</h5>
+              <p>아모레퍼시픽의 브랜드는 전통적인 뷰티의 영역을 과감히 넘고자 노력합니다. 창조적인 아이디어에 기술 혁신을 더해 효능의 가치를 높인 차세대 뷰티 제품을 만들고, 건강한 삶을 돌보기 위한
+                솔루션을 제안합니다. 전 세계 고객과 직접 소통하며 아름다움을 향한 여정을 이어갑니다.</p>
+              <a href="product.html" class="btn_viewmore"><img src="./images/button/btn_viewmore.png" alt="더보기"></a>
+            </div>
+            <span class="vertical_line"></span>
+            <div class="sub_rightbox">
+              <ul>
+                <li>
+                  <a href="#none" title="케어용품">케어용품 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner act">
+                    <li><a href="#none" title="엘라스틴">엘라스틴</a></li>
+                    <li><a href="#none" title="오가니스트">오가니스트</a></li>
+                    <li><a href="#none" title="리엔">리엔</a></li>
+                    <li><a href="#none" title="닥터그루트">닥터그루트</a></li>
+                    <li><a href="#none" title="실크테라피">실크테라피</a></li>
+                    <li><a href="#none" title="벨먼">벨먼</a></li>
+                    <li><a href="#none" title="피지오겔">피지오겔</a></li>
+                    <li><a href="#none" title="강남glow">강남glow</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="생활용품">생활용품 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="페리오">페리오</a></li>
+                    <li><a href="#none" title="죽염치약">죽염치약</a></li>
+                    <li><a href="#none" title="reach">reach</a></li>
+                    <li><a href="#none" title="샤프란">샤프란</a></li>
+                    <li><a href="#none" title="아우라">아우라</a></li>
+                    <li><a href="#none" title="한입">한입</a></li>
+                    <li><a href="#none" title="테크">테크</a></li>
+                    <li><a href="#none" title="수퍼타이">수퍼타이</a></li>
+                    <li><a href="#none" title="fiji">fiji</a></li>
+                    <li><a href="#none" title="산소크린">산소크린</a></li>
+                    <li><a href="#none" title="주거용품">주거용품</a></li>
+                    <li><a href="#none" title="홈스타">홈스타</a></li>
+                    <li><a href="#none" title="자연퐁">자연퐁</a></li>
+                    <li><a href="#none" title="퐁퐁">퐁퐁</a></li>
+                    <li><a href="#none" title="safe">safe</a></li>
+                    <li><a href="#none" title="아우라">아우라</a></li>
+                    <li><a href="#none" title="샤프란케어">샤프란케어</a></li>
+                    <li><a href="#none" title="베비언스">베비언스</a></li>
+                    <li><a href="#none" title="메소스">메소스</a></li>
+                    <li><a href="#none" title="시리우스">시리우스</a></li>
+                    <li><a href="#none" title="선물세트">선물세트</a></li>
+                    <li><a href="#none" title="미니스">미니스</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="음료">음료 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="코카콜라">코카콜라</a></li>
+                    <li><a href="#none" title="환타">환타</a></li>
+                    <li><a href="#none" title="암바사">암바사</a></li>
+                    <li><a href="#none" title="스프라이트">스프라이트</a></li>
+                    <li><a href="#none" title="닥터페퍼">닥터페퍼</a></li>
+                    <li><a href="#none" title="캐나다 드라이">캐나다 드라이</a></li>
+                    <li><a href="#none" title="씨그램">씨그램</a></li>
+                    <li><a href="#none" title="갈배사이다">갈배사이다</a></li>
+                    <li><a href="#none" title="미닛메이드">미닛메이드</a></li>
+                    <li><a href="#none" title="콰일촌">콰일촌</a></li>
+                    <li><a href="#none" title="코코팜">코코팜</a></li>
+                    <li><a href="#none" title="갈아만든 배">갈아만든 배</a></li>
+                    <li><a href="#none" title="봉봉">봉봉</a></li>
+                    <li><a href="#none" title="조지아">조지아</a></li>
+                    <li><a href="#none" title="태양의 마테차">태양의 마테차</a></li>
+                    <li><a href="#none" title="태양의 식후비법W">태양의 식후비법W</a></li>
+                    <li><a href="#none" title="샤프란케어">샤프란케어</a></li>
+                    <li><a href="#none" title="파워에이드">파워에이드</a></li>
+                    <li><a href="#none" title="토레타">토레타</a></li>
+                    <li><a href="#none" title="몬스터 에너지">몬스터 에너지</a></li>
+                    <li><a href="#none" title="구론산">구론산</a></li>
+                    <li><a href="#none" title="휘오">휘오</a></li>
+                    <li><a href="#none" title="평창수">평창수</a></li>
+                    <li><a href="#none" title="글라소 비타민워터">글라소 비타민워터</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </li>
+        <!-- ESG 2단메뉴 -->
+        <li class="menu menu_esg">
+          <a class="menu_name" href="esg.html" title="esg소개페이지로 바로가기">ESG</a>
+          <div class="sub_menu">
+            <div class="sub_leftbox">
+              <h5>ESG</h5>
+              <p>LG생활건강은 2050년 탄소중립을 실현하기 위한 다양한 감축과제를 단계적으로 도입하여 미래세대를 위한 환경적 책임을 다하고 이를 통해 고객가치를 확대해 나가겠습니다.</p>
+              <a href="esg.html" class="btn_viewmore"><img src="./images/button/btn_viewmore.png" alt="더보기"></a>
+            </div>
+            <span class="vertical_line"></span>
+            <div class="sub_rightbox">
+              <ul>
+                <li>
+                  <a href="#none" title="ESG">ESG <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner act">
+                    <li><a href="#none" title="CEO 메시지">CEO 메시지</a></li>
+                    <li><a href="#none" title="추진전략">추진전략</a></li>
+                    <li><a href="#none" title="주요 ESG성과">주요ESG성과</a></li>
+                    <li><a href="#none" title="통합리스크관리">통합리스크관리</a></li>
+                    <li><a href="#none" title="유엔 글로벌 콤팩트">유엔 글로벌 콤팩트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="기후변화대응">기후변화대응 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="탄소중립선언2050">탄소중립선언2050</a></li>
+                    <li><a href="#none" title="생물다양성">생물다양성</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="사회환경가치제품">사회환경가치제품 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="사회환경가치제품 개발">사회환경가치제품 개발</a></li>
+                    <li><a href="#none" title="F오픈이노베이션">오픈이노베이션</a></li>
+                    <li><a href="#none" title="제품특허관리">제품특허관리</a></li>
+                    <li><a href="#none" title="친환경 제품포장">친환경 제품포장</a></li>
+                    <li><a href="#none" title="친환경 라벨링 제품">친환경 라벨링 제품</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="환경안전경영">환경안전경영 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="친환경안전경영 성과">친환경안전경영 성과</a></li>
+                    <li><a href="#none" title="ESH 운영 성과">ESH 운영 성과</a></li>
+                    <li><a href="#none" title="친환경 공정관리">친환경 공정관리</a></li>
+                    <li><a href="#none" title="친환경 물류">친환경 물류</a></li>
+                    <li><a href="#none" title="임직원 안전 및 보건">임직원 안전 및 보건</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#none" title="사회책임">사회책임 <i class="fa-solid fa-chevron-right"></i></a>
+                  <ul class="sub_rightbox_inner">
+                    <li><a href="#none" title="사회공헌">사회공헌</a></li>
+                    <li><a href="#none" title="동반성장 파트너십">동반성장 파트너십</a></li>
+                    <li><a href="#none" title="임직원 가치 제고">임직원 가치 제고</a></li>
+                    <li><a href="#none" title="고객가치 향상">고객가치 향상</a></li>
+                    <li><a href="#none" title="정책">정책</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </li>
+        <!-- 공지사항 2단메뉴 -->
+        <li class="menu menu_notice">
+          <a class="menu_name" href="http://wldn185.dothome.co.kr/bbs/bbs/board.php?bo_table=notice2"
+            title="공지사항페이지로 바로가기">공지사항</a>
+          <div class="sub_menu">
+            <div class="sub_leftbox">
+              <h5>공지사항</h5>
+              <p>LG생활건강은 늘 새로운 소식과 즐거운 이야기로 고객 여러분을 찾아 갑니다. 뷰티/생활/건강 각 분야별 생활속의 도움이 되는 정보를 제공 합니다.</p>
+              <a href="http://wldn185.dothome.co.kr/bbs/bbs/board.php?bo_table=notice2" class="btn_viewmore"><img
+                  src="./images/button/btn_viewmore.png" alt="더보기"></a>
+            </div>
+            <span class="vertical_line"></span>
+            <div class="sub_rightbox">
+              <ul>
+                <li><a href="#none" title="보도자료">보도자료</a></li>
+                <li><a href="#none" title="광고">광고</a></li>
+                <li><a href="#none" title="생활문화정보">생활문화정보</a></li>
+                <li><a href="#none" title="NEWS">NEWS</a></li>
+                <li><a href="#none" title="LG생활건강스토리">LG생활건강스토리</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </li>
+        <!-- 고객센터 2단메뉴 -->
+        <li class="menu menu_cus">
+          <a href="customer.html" title="고객센터페이지로 바로가기">고객센터</a>
+          <div class="sub_menu">
+            <div class="sub_leftbox">
+              <h5>고객센터</h5>
+              <p>고객의 소리에 언제나 귀를 기울이며 고객의 기대사항을 적극 발굴하여 해결하면서 고객과의 행복한 미래를 만들어 갑니다.</p>
+              <a href="cus.html" class="btn_viewmore"><img src="./images/button/btn_viewmore.png" alt="더보기"></a>
+            </div>
+            <span class="vertical_line"></span>
+            <div class="sub_rightbox">
+              <ul>
+                <li><a href="#none" title="고객대응절차">고객대응절차</a></li>
+                <li><a href="#none" title="간편해결">간편해결</a></li>
+                <li><a href="#none" title="고객의 소리">고객의 소리</a></li>
+                <li><a href="#none" title="FAQ">FAQ</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <nav class="h_nav">
+      <ul>
+        <li><a href="login.html" title="로그인">로그인</a></li>
+        <li>
+          <form action="#" method="post" id="search">
+            <input type="text" id="search_text" placeholder="검색어">
+            <i class="fa-solid fa-magnifying-glass" title="검색창"></i>
+          </form>
+
+        </li>
+        <li class="h_lang">
+          <i class="fa-solid fa-globe" title="언어설정"></i>
+          <ul>
+            <li class="h_lang_act">KR</li>
+            <li>EN</li>
+            <li>CN</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 메인 영역 -->
+  <main>
+    <!-- 1. 메인슬라이드 배너 -->
+    <section class="sect1_main_slide">
+      <h2>메인슬라이드</h2>
+      <article>
+        <h3>메인슬라이드</h3>
+        <div class="main_slidebox act">
+          <div class="main_slide_textbox">
+            <h4>저칼로리 착한 수분,<br>토레타</h4>
+            <p>산뜻하고 깔끔한 맛으로 온 가족이 즐길 수 있는 <br>이온 보충, 토레타!</p>
+          </div>
+          <video muted loop autoplay playsinline>
+            <source src="./media/video_mainbanner02.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="main_slidebox">
+          <div class="main_slide_textbox">
+            <h4>상큼달콤함은 그대로,<br>칼로리는 제로!</h4>
+            <p>기분까지 유쾌하게 해주는 환타를 <br>제로슈거, 제로칼로리로 더 가볍게 즐겨 보세요!</p>
+          </div>
+          <video muted loop autoplay playsinline>
+            <source src="./media/video_mainbanner03.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="main_slidebox">
+          <div class="main_slide_textbox">
+            <h4>아름다움을 전하는,<br>더후</h4>
+            <p>우리 궁중 문화에서 발견한 지혜가 현대 과학과 만나 <br>가장 가치있는
+              미의 조화를 창조해냅니다.</p>
+          </div>
+          <video muted loop autoplay playsinline>
+            <source src="./media/video_mainbanner04.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="main_slide_c_btn">
+          <span class="main_slide_on">&nbsp;</span>
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+        </div>
+        <div class="main_slide_btn">
+          <div class="main_slide_lnr_btn">
+            <img src="./images/button/btn_lnr_frame.png" alt="좌우버튼 프레임">
+            <img src="./images/button/btn_lnr_left.png" alt="왼쪽버튼">
+            <img src="./images/button/btn_lnr_right.png" alt="오른쪽버튼">
+          </div>
+          <img src="./images/button/btn_pause.png" alt="pause">
+        </div>
+      </article>
+    </section>
+
+    <!-- 2. 회사소개 섹션 -->
+    <section class="sect2_about">
+      <h2>회사소개</h2>
+      <article class="main_inner">
+        <h3>회사소개</h3>
+        <div class="sect2_bg">
+          <p>BEAUTIFUL</p>
+          <p>HEALTHY</p>
+          <p>REFRESHING</p>
+          <p>여러분의 아름다움과 꿈을 실현하는 최고의 생활문화 기업으로서<br> 건강하고, 아름답고, 활기찬 가치를 제공합니다.</p>
+          <a href="about.html" class="btn_viewmore"><img src="./images/button/btn_viewmore.png" alt="더보기"></a>
+        </div>
+        <div class="sect2_move" data-speed="0.5">
+          <img src="./images/main/main_about1.jpg" alt="회사소개 이미지1">
+          <img src="./images/main/main_about2.jpg" alt="회사소개 이미지2">
+          <img src="./images/main/main_about3.jpg" alt="회사소개 이미지3">
+        </div>
+      </article>
+    </section>
+
+    <!-- 3. ESG 섹션 -->
+    <section class="sect3_esg">
+      <h2>esg</h2>
+      <article class="main_inner">
+        <h3>esg</h3>
+        <div class="esg_box box1">
+          <div class="esg_box_inner">
+            <h4>Environmental</h4>
+            <p>경제&#183;환경&#183;사회적 책임을 다함으로써 지속가능한 사회발전에 기여할 것입니다.</p>
+            <a href="#none"><img src="./images/button/btn_more_beige.png" alt="더보기"></a>
+          </div>
+        </div>
+        <div class="esg_box box2">
+          <div class="esg_box_inner">
+            <h4>Social</h4>
+            <p>친환경 기업으로서 고객과의 신뢰를 유지하기 위해 최선을 다하고 있습니다.</p>
+            <a href="#none"><img src="./images/button/btn_more_beige.png" alt="더보기"></a>
+          </div>
+        </div>
+        <div class="esg_box box3">
+          <div class="esg_box_inner">
+            <h4>Governance</h4>
+            <p>LG생활건강은 깨끗하고 투명한 경영으로 여러분과 만날 것을 약속합니다.</p>
+            <a href="#none"><img src="./images/button/btn_more_beige.png" alt="더보기"></a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 4. 브랜드 섹션 -->
+    <section class="sect4_brand">
+      <h2>OUR BRANDS</h2>
+      <p>여러분의 아름다운 꿈을 실현해 드립니다.</p>
+      <article>
+        <h3>OUR BRANDS</h3>
+        <!-- Swiper -->
+        <div class="swiper mySwiper mySwiper_brands">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide brand_slide"><a href="#none"><img src="./images/main/main_brand01.jpg" alt="브랜드이미지1"></a></div>
+            <div class="swiper-slide brand_slide"><a href="#none"><img src="./images/main/main_brand02.jpg" alt="브랜드이미지2"></a></div>
+            <div class="swiper-slide brand_slide"><a href="#none"><img src="./images/main/main_brand03.jpg" alt="브랜드이미지3"></a></div>
+            <div class="swiper-slide brand_slide"><a href="#none"><img src="./images/main/main_brand04.jpg" alt="브랜드이미지4"></a></div>
+            <div class="swiper-slide brand_slide"><a href="#none"><img src="./images/main/main_brand05.jpg" alt="브랜드이미지5"></a></div>
+            <div class="swiper-slide brand_slide"><a href="#none"><img src="./images/main/main_brand06.jpg" alt="브랜드이미지6"></a></div>
+            <div class="swiper-slide brand_slide"><a href="#none"><img src="./images/main/main_brand07.jpg" alt="브랜드이미지7"></a></div>
+            <div class="swiper-slide brand_slide"><a href="#none"><img src="./images/main/main_brand08.jpg" alt="브랜드이미지8"></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next btn_brand"><img src="./images/button/btn_right.png" alt="다음버튼"></div>
+          <div class="swiper-button-prev btn_brand"><img src="./images/button/btn_left.png" alt="이전버튼"></div>
+        </div>
+        <a href="brand.html" class="btn_viewmore"><img src="./images/button/btn_viewmore.png" alt="더보기"></a>
+      </article>
+    </section>
+
+    <!-- 5. 광고 섹션 -->
+    <section class="sect5_ad">
+      <h2>광고배너</h2>
+      <article>
+        <h3>광고배너</h3>
+        <a href="#none"><img src="./images/main/main_ad.jpg" alt="광고배너"></a>
+      </article>
+    </section>
+
+    <!-- 6. 공지사항 섹션 -->
+    <section class="sect6_board">
+      <h2>공지사항</h2>
+      <article class="main_inner">
+        <h3>공지사항</h3>
+        <!-- 공지사항 왼쪽 박스 -->
+        <div class="board_leftbox">
+          <div>
+            <h4>NOTICE</h4>
+            <p>LG생활건강은 늘 새로운 소식과 즐거운 이야기로 고객 여러분을 찾아 갑니다.</p>
+            <a href="http://wldn185.dothome.co.kr/bbs/bbs/board.php?bo_table=notice2"><img
+                src="./images/button/btn_more.png" alt="공지사항 바로가기"></a>
+          </div>
+        </div>
+        <!-- 공지사항 오른쪽 박스 -->
+        <div class="board_rightbox">
+          <div class="swiper mySwiper mySwiper_notice">
+            <div class="swiper-wrapper">
+              <!-- 슬라이드 1 -->
+              <div class="swiper-slide notice_slide">
+                <a href="https://www.lghnh.com/news/press/view.jsp?seq=3926&title="><img src="./images/main/main_notice1.jpg" alt="이미지"></a>
+                <div class="slide-text">
+                  <a href="https://www.lghnh.com/news/press/view.jsp?seq=3926&title="><p>LG생활건강 더후, 中징둥닷컴 ‘스타어워즈’ 수상 “히트상품 입증”</p></a>
+                  <p>럭셔리 화장품 ‘천기단’ 높은 평가… “리뉴얼로 ‘차별적 고객 가치’ 제공”</p>
+                </div>
+              </div>
+              <!-- 슬라이드 2 -->
+              <div class="swiper-slide notice_slide">
+                <a href="https://www.lghnh.com/news/press/view.jsp?seq=3930&title="><img src="./images/main/main_notice2.jpg" alt="이미지"></a>
+                <div class="slide-text">
+                  <a href="https://www.lghnh.com/news/press/view.jsp?seq=3930&title="><p>LG생활건강, 1분기 매출·영업이익 모두 ‘성장 전환</p></a>
+                  <p>전년 동기 대비 전사 매출 2.7%, 영업이익 3.5% 증가</p>
+                </div>
+              </div>
+              <!-- 슬라이드 3 -->
+              <div class="swiper-slide notice_slide">
+                <a href="https://www.lghnh.com/news/press/view.jsp?seq=3938&title="><img src="./images/main/main_notice3.jpg" alt="이미지"></a>
+                <div class="slide-text">
+                  <a href="https://www.lghnh.com/news/press/view.jsp?seq=3938&title="><p>LG생활건강, 더후·CNP 中상해시 주최 뷰티행사 ‘과학기술상’ 수상</p></a>
+                  <p>국제 뷰티 페스티벌서 탁월한 효능·효과로 ‘NAD+’, ‘더마’ 기술력 평가</p>
+                </div>
+              </div>
+              <!-- 슬라이드 4 -->
+              <div class="swiper-slide notice_slide">
+                <a href="https://www.lghnh.com/news/press/view.jsp?seq=3918&title="><img src="./images/main/main_notice4.jpg" alt="이미지"></a>
+                <div class="slide-text">
+                  <a href="https://www.lghnh.com/news/press/view.jsp?seq=3918&title="><p>8만 명이 참가한 LG생활건강 ‘빌려쓰는 지구스쿨’, 교육과정 업그레이드</p></a>
+                  <p>‘올바른 소비습관’ 과목 추가…미니 타투 프린터 ‘임프린투’ 체험 기회도 제공
+                  </p>
+                </div>
+              </div>
+              <!-- 슬라이드 5 -->
+              <div class="swiper-slide notice_slide">
+                <a href="https://www.lghnh.com/news/press/view.jsp?seq=3937&title="><img src="./images/main/main_notice5.jpg" alt="이미지"></a>
+                <div class="slide-text">
+                  <a href="https://www.lghnh.com/news/press/view.jsp?seq=3937&title="><p>LG생활건강, '반짝반짝 페리오' 공연으로 차별적 고객경험 전파</p></a>
+                  <p>공연 관람 후 어린이 80% 이상 양치·손 씻기 습관 개선’…셀프 체크리스트 제공</p>
+                </div>
+              </div>
+              <!-- 슬라이드 6 -->
+              <div class="swiper-slide notice_slide">
+                <a href="https://www.lghnh.com/news/press/view.jsp?seq=3936&title="><img src="./images/main/main_notice6.jpg" alt="이미지"></a>
+                <div class="slide-text">
+                  <a href="https://www.lghnh.com/news/press/view.jsp?seq=3936&title="><p>LG생활건강 “뉴진스 하니, 구찌뷰티의 미학을 완벽히 구현” 브랜디드 영상 공개</p></a>
+                  <p>구찌뷰티 새 ‘글로벌 앰버서더’ 하니, 첫 홍보 콘텐츠 제작</p>
+                </div>
+              </div>
+              <!-- 슬라이드 7 -->
+              <div class="swiper-slide notice_slide">
+                <a href="https://www.lghnh.com/news/press/view.jsp?seq=3935&title="><img src="./images/main/main_notice7.jpg" alt="이미지"></a>
+                <div class="slide-text">
+                  <a href="https://www.lghnh.com/news/press/view.jsp?seq=3935&title="><p>LG생활건강, 고효능 스킨케어 성분 담은 바디케어 브랜드 ‘비클리닉스’ 론칭</p></a>
+                  <p>브라이트닝 턴온 바디로션 등 제품 5종 올리브영에서 판매…’차별적 고객경험’ 제공</p>
+                </div>
+              </div>
+              <!-- 슬라이드 8 -->
+              <div class="swiper-slide notice_slide">
+                <a href="https://www.lghnh.com/news/press/view.jsp?seq=3929&title="><img src="./images/main/main_notice8.jpg" alt="이미지"></a>
+                <div class="slide-text">
+                  <a href="https://www.lghnh.com/news/press/view.jsp?seq=3929&title="><p>‘3배’ 더 쫀쫀한 욕실 청소로 차별적 고객경험 제공 LG생활건강 홈스타 ‘핑크파워 세정제 3종’ 출시</p></a>
+                  <p>3종 핑크베리와 구연산을 함께 담은 ‘핑크구연산폼™’의 강력한 오염 분해</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 7. 유튜브 섹션 -->
+    <section class="sect7_youtube">
+      <h2>SOCIAL MEDIA</h2>
+      <p>LG생활건강의 유튜브를 통해 최신 소식을 빠르게 만나보세요.</p>
+      <article class="main_inner">
+        <h3>SOCIAL MEDIA</h3>
+        <div class="sect7_grid">
+          <div class="grid_area area1">
+            <iframe src="https://www.youtube.com/embed/ITp6p8RQbtI?si=jvGb0Dcycb3w2Z8L"
+              title="YouTube video player" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><a href="#none">[ 생생한 취조실 EP 1 ] 온더바디 발을씻자 풋샴푸</a></p>
+          </div>
+          <div class="grid_area area2">
+            <iframe src="https://www.youtube.com/embed/-QCPljD7O6A?si=PNFO_WJCurJXT8WV"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><a href="#none">[ LG생활건강 ] LG생활건강이 고객가치에 신경쓰는 이유</a></p>
+          </div>
+          <div class="grid_area area3">
+            <iframe src="https://www.youtube.com/embed/mkQOueQsJZo?si=UEjyZveAsPcBRBy7"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><a href="#none">[ LG생활건강 ESG ] 2023 Clean Tech Fair</a></p>
+          </div>
+          <div class="grid_area area4">
+            <iframe src="https://www.youtube.com/embed/ZzU9nwfUHN0?si=LVfxrtzf9iASFNub"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><a href="#none">LG생활건강 현직자들이 알려주는 채용꿀팁 !</a></p>
+          </div>
+          <div class="grid_area area5">
+            <iframe src="https://www.youtube.com/embed/fOChprGxKUc?si=TPMFuhR4NxCYz5w_"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><a href="#none">[ 명예의전당 ] ep1 리엔물들임 새치커버 샴푸</a></p>
+          </div>
+          <div class="grid_area area6">
+            <iframe src="https://www.youtube.com/embed/6OBbWZhtDs0?si=HKf8HRO-jXYAT0CN"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><a href="#none">[ LG생활건강 ESG ] 꿀벌은 우리가 지킨다</a></p>
+          </div>
+          <div class="grid_area area7">
+            <iframe src="https://www.youtube.com/embed/o2xnAZClnpk?si=NjJS1D_E7e47Eb8V"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><a href="#none">[생활건강TV힐링캠프] 브이로그편</a></p>
+          </div>
+          <div class="grid_area area8">
+            <iframe src="https://www.youtube.com/embed/r_ctl2t7TaY?si=KhOjpk2hI_OcnN-Q"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><a href="#none">[취미의 발견 컨테스트 티져]</a></p>
+          </div>
+        </div>
+        <a href="https://www.youtube.com/channel/UC60e4j7LVEFzLSSgt2DZTZg" class="btn_viewmore"><img
+            src="./images/button/btn_viewmore.png" alt="유튜브 바로가기"></a>
+      </article>
+      <article class="m_inner">
+        <h3>SOCIAL MEDIA</h3>
+        <!-- 태블릿, 모바일 유튜브 섹션 Swiper -->
+        <div class="swiper mySwiper mySwiper_youtube">
+          <div class="swiper-wrapper youtube-swiper-wrapper">
+            <div class="swiper-slide youtube-slide">
+              <iframe src="https://www.youtube.com/embed/ITp6p8RQbtI?si=jvGb0Dcycb3w2Z8L"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p><a href="#none">[ 생생한 취조실 EP 1 ] 온더바디 발을씻자 풋샴푸</a></p>
+            </div>
+            <div class="swiper-slide youtube-slide">
+              <iframe src="https://www.youtube.com/embed/-QCPljD7O6A?si=PNFO_WJCurJXT8WV"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p><a href="#none">[ LG생활건강 ] LG생활건강이 고객가치에 신경쓰는 이유</a></p>
+            </div>
+            <div class="swiper-slide youtube-slide">
+              <iframe src="https://www.youtube.com/embed/mkQOueQsJZo?si=UEjyZveAsPcBRBy7"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p><a href="#none">[ LG생활건강 ESG ] 2023 Clean Tech Fair</a></p>
+            </div>
+            <div class="swiper-slide youtube-slide">
+              <iframe src="https://www.youtube.com/embed/ZzU9nwfUHN0?si=LVfxrtzf9iASFNub"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p><a href="#none">LG생활건강 현직자들이 알려주는 채용꿀팁 !</a></p>
+            </div>
+            <div class="swiper-slide youtube-slide">
+              <iframe src="https://www.youtube.com/embed/fOChprGxKUc?si=TPMFuhR4NxCYz5w_"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p><a href="#none">[ 명예의전당 ] ep1 리엔물들임 새치커버 샴푸</a></p>
+            </div>
+            <div class="swiper-slide youtube-slide">
+              <iframe src="https://www.youtube.com/embed/6OBbWZhtDs0?si=HKf8HRO-jXYAT0CN"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p><a href="#none">[ LG생활건강 ESG ] 꿀벌은 우리가 지킨다</a></p>
+            </div>
+            <div class="swiper-slide youtube-slide">
+              <iframe src="https://www.youtube.com/embed/o2xnAZClnpk?si=NjJS1D_E7e47Eb8V"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p><a href="#none">[생활건강TV힐링캠프] 브이로그편</a></p>
+            </div>
+            <div class="swiper-slide youtube-slide">
+              <iframe src="https://www.youtube.com/embed/r_ctl2t7TaY?si=KhOjpk2hI_OcnN-Q"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p><a href="#none">[취미의 발견 컨테스트 티져]</a></p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <a href="https://www.youtube.com/channel/UC60e4j7LVEFzLSSgt2DZTZg" class="btn_viewmore"><img
+          src="./images/button/btn_viewmore.png" alt="유튜브 바로가기"></a>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- 푸터영역 -->
+  <footer>
+    <!-- 탑버튼 -->
+    <a href="#" class="btn_top"><img src="./images/button/btn_top.png" alt="상단으로 바로가기"></a>
+    <!-- 상담사버튼 -->
+    <div class="btn_cs">
+      <img src="./images/button/bnt_cus.png" alt="상담사">
+      <div class="cs_con">
+        <p>고객상담실<i class="fa-solid fa-phone-flip"></i></p>
+        <p>02-000-0000</p>
+        <p>요일 : 월-금요일</p>
+        <p>시간 : 10:00~17:30</p>
+      </div>
+    </div>
+
+    <h2><img src="./images/logo.png" alt="하단로고"></h2>
+    <nav class="f_lnb">
+      <ul>
+        <li><a href="#none" title="이용약관">이용약관</a></li>
+        <li><a href="#none" title="개인정보처리방침">개인정보처리방침</a></li>
+        <li><a href="#none" title="이메일무단수신거부">이메일무단수신거부</a></li>
+        <li><a href="#none" title="CONTACT US">CONTACT US</a></li>
+        <li><a href="#none" title="열린구매">열린구매</a></li>
+        <li><a href="#none" title="정도경영">정도경영</a></li>
+        <li><a href="#none" title="사이트맵">사이트맵</a></li>
+        <li><a href="#none" title="법적고지">법적고지</a></li>
+      </ul>
+    </nav>
+    <address>
+      <p>(주)LG생활건강 대표이사 : 홍길동</p>
+      <p>서울시 종0구 새0안로 00LG0화0빌딩 LG생활건강</p>
+      <p>사업자등록번호 : 000-00-00000</p>
+    </address>
+
+    <div class="f_rightbox">
+
+      <div class="f_select">
+        <span class="f_familysite">패밀리사이트</span>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <ul class="f_list">
+        <li><a href="#none" title="법인사이트">법인사이트</a></li>
+        <li><a href="#none" title="엘케어멤버스">엘케어멤버스</a></li>
+        <li><a href="#none" title="E&A몰(B2B전문몰)">E&A몰(B2B전문몰)</a></li>
+        <li><a href="#none" title="보떼">보떼</a></li>
+        <li><a href="#none" title="LG뷰티 카운셀러">LG뷰티 카운셀러</a></li>
+      </ul>
+
+      <div class="f_cs">
+        <p>고객상담실</p>
+        <p>02-000-0000</p>
+        <p>요일 : 월-금요일</p>
+        <p>시간 : 10:00~17:30</p>
+      </div>
+    </div>
+    <p>Copyright © LG H&H Co., Ltd. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    //공지사항
+    var swiper = new Swiper(".mySwiper_notice", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      freeMode: true,
+      slidesOffsetBefore: 0,
+      slidesOffsetAfter: 5,
+      breakpoints: {
+        // 768px 이상에서는 3개의 슬라이드를 보여줌
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          slidesOffsetBefore: 20,
+          slidesOffsetAfter: 20,
+        },
+        // 1024px 이상에서는 5개의 슬라이드를 보여줌
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          slidesOffsetBefore: 20,
+          slidesOffsetAfter: 20,
+        }
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+        clickable: true,
+      },
+    });
+
+    // brand
+    var swiper = new Swiper(".mySwiper_brands", {
+      slidesPerView: 5,
+      spaceBetween: 80,
+      centeredSlides: true,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+
+        300: { //모바일 300px이상일 경우
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: { //태블릿 768px 이상일 경우
+          slidesPerView: 3,
+          spaceBetween: 70,
+        },
+        1024: { //pc 1024px이상일 경우
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+        1400: { //pc 1400px이상일 경우
+          slidesPerView: 5,
+          spaceBetween: 80,
+        }
+      },
+    });
+    //유튜브
+    var swiper = new Swiper(".mySwiper_youtube", {
+      spaceBetween: 10,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

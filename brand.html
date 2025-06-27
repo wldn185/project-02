@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRAND</title>
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <link href="./css/sub.css" rel="stylesheet" type="text/css">
+  <link href="./css/brand.css" rel="stylesheet" type="text/css">
+  <!-- 회사소개 서브페이지 서식 -->
+  <!-- <link rel="stylesheet" href="./css/about.css" type="text/css"> -->
+  <!-- esg 서브페이지 서식 -->
+  <link rel="stylesheet" href="./css/esg.css" type="text/css">
+
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="./script/brand.js"></script>
+
+</head>
+
+<body>
+  <?php
+  include('header.php');
+  ?>
+  <main>
+    <!-- 브랜드 메인 배너 -->
+    <section class="main_banner main_banner_brand">
+      <div class="main_banner_inner">
+        <h2 class="brand_h2">BRAND</h2>
+        <p>Beautiful 사업은 건강한 아름다움의 꿈을 실현해 나가기 위해
+          우수한 품질을 갖춘 세계 최고의 브랜드를 육성하는 것을 목표로 하고 있으며,
+          이를 통해 국내시장 선도를넘어 해외시장으로 강하게, 멀리 확장해 나가고 있습니다.
+        </p>
+      </div>
+      <!-- 스크롤 아이콘 서식 -->
+      <div class="scroll">
+        <div class="ico_scroll"></div>
+        <p>scroll down</p>
+      </div>
+    </section>
+
+    <section class="brand_cont_box">
+      <h3>브랜드 카테고리</h3>
+      <div class="brand_cont">
+        <nav class="brand_cont_nav">
+          <div class="brand_select_btn">
+            <p>전체보기</p>
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-minus"></i>
+          </div>
+          <ul class="brand_select">
+            <li class="brand_option"><a href="#" title="전체보기" class="brand_act">전체보기</a></li>
+            <li class="brand_option"><a href="#" title="화장품">화장품</a></li>
+            <li class="brand_option"><a href="#" title="메이크업">메이크업</a></li>
+            <li class="brand_option"><a href="#" title="컨셔스뷰티">컨셔스뷰티</a></li>
+            <li class="brand_option"><a href="#" title="메디컬뷰티">메디컬뷰티</a></li>
+            <li class="brand_option"><a href="#" title="바디케어">바디케어</a></li>
+            <li class="brand_option"><a href="#" title="남성케어">남성케어</a></li>
+            <li class="brand_option"><a href="#" title="뷰티컬렉션">뷰티컬렉션</a></li>
+          </ul>
+        </nav>
+
+        <ul class="brand_gallery">
+          <li class="brand_cosmetic"><a href="#" title="더 후 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_01.png" alt="더후">
+              <div class="brand_gallery_hover">
+                <p>THE WHOO</p>
+                <p>궁중 피부과학으로 균형과 조화의 아름다움을 전하는 럭셔리 코스메틱, 더후</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_cosmetic"><a href="#" title="오휘 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_02.png" alt="오휘">
+              <div class="brand_gallery_hover">
+                <p>OHUI</p>
+                <p>진보된 ‘디에이징 (De-Aging)’ 솔루션으로 실질적 피부 변화를 약속하는 브랜드</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_cosmetic"><a href="#" title="숨 37도 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_03.png" alt="숨 37도">
+              <div class="brand_gallery_hover">
+                <p>숨37°</p>
+                <p>피부가 편안하게 숨쉴 수 있도록
+                  대자연의 생명력을 오롯이 담아냅니다.</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_cosmetic"><a href="#" title="빌리프 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_04.png" alt="빌리프">
+              <div class="brand_gallery_hover">
+                <p>belif</p>
+                <p>뛰어난 성분과 효능을 안전하고 정직하게 피부위에 구현하는 이름, 빌리프</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_cosmetic"><a href="#" title="더페이스샵 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_05.png" alt="더페이스샵">
+              <div class="brand_gallery_hover">
+                <p>THE FACE SHOP</p>
+                <p>자연으로부터 얻는 아름다움과 지속가능한 일상까지 고려하는 클린뷰티 브랜드</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_cosmetic"><a href="#" title="이자녹스 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_6.png" alt="이자녹스">
+              <div class="brand_gallery_hover">
+                <p>ISA KNOX</p>
+                <p>이상적인 피부 나이를 위한 맞춤형 고기능성 솔루션을 제공하는 에이징 케어 엑스퍼트 브랜드</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_cosmetic"><a href="#" title="VDL 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_7.png" alt="VDL">
+              <div class="brand_gallery_hover">
+                <p>VDL</p>
+                <p>내 피부에 꼭 맞는 옷을 입었을 때 느껴지는 자신감처럼, 내 피부에 꼭 맞는 메이크업 핏</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_cosmetic"><a href="#" title="수려한 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_8.png" alt="수려한">
+              <div class="brand_gallery_hover">
+                <p>Sooryehan</p>
+                <p>오랫동안 전해져 내려오는
+                  빼어난 아름다움의 비법, 수려한</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_man "><a href="#" title="보닌 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_9.png" alt="보닌">
+              <div class="brand_gallery_hover">
+                <p>VONIN</p>
+                <p>남성 피부 전성기를 위한 시대에 앞선 MAN'S STYLE VONIN</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_medical"><a href="#" title="케어존플러스 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_10.png" alt="케어존플러스">
+              <div class="brand_gallery_hover">
+                <p>CAREZONE+</p>
+                <p>모든 피부가 안심하고 사용하도록,
+                  순한 저자극 브랜드 케어존</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_body"><a href="#" title="비욘드 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_11.png" alt="비욘드">
+              <div class="brand_gallery_hover">
+                <p>BEYOND</p>
+                <p>다르게 생각하고 바르게 만듭니다. 트루에코 비욘드</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_conscious"><a href="#" title="어글리 러블리 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_12.png" alt="어글리러블리">
+              <div class="brand_gallery_hover">
+                <p>UGLY LOVELY</p>
+                <p>바야흐로 못난이 전성시대! 어글리한 농작물들의 러블리한 반란!</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_cosmetic"><a href="#" title="닥터벨머 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_13.png" alt="닥터벨머">
+              <div class="brand_gallery_hover">
+                <p>Dr.Belmeur</p>
+                <p>LG생활건강 더마 연구팀의 기술력이 담긴 전문성을 기반으로한 감각적인 더마 브랜드</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_medical"><a href="#" title="CNP Laboratory 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_14.png" alt="CNP Laboratory">
+              <div class="brand_gallery_hover">
+                <p>CNP Laboratory</p>
+                <p>처방이 화장품이 되다, CNP Laboratory</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_collect"><a href="#" title="네이쳐 컬렉션 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_15.png" alt="네이쳐 컬렉션">
+              <div class="brand_gallery_hover">
+                <p>Nature Collection</p>
+                <p>더페이스샵을 포함한 LG생활건강의 다양한 뷰티 브랜드를 만나볼 수 있는 뷰티 공식 스토어</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_cosmetic"><a href="#" title="보떼 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_16.png" alt="보떼">
+              <div class="brand_gallery_hover">
+                <p>BEAUTE</p>
+                <p>지속가능한 아름다움,
+                  세련된 아름다움을 추구하는 라이프 스타일 SHOP</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_makeup"><a href="#" title="팁시 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_17.png" alt="팁시">
+              <div class="brand_gallery_hover">
+                <p>TPSY</p>
+                <p>즐거움에 빠져드는 그 순간, TPSY 팁시</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_conscious"><a href="#" title="freshian 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_18.png" alt="freshian">
+              <div class="brand_gallery_hover">
+                <p>freshian</p>
+                <p>프레시안, 지금까지 몰랐던 나의 새롭고 신선한 아름다움</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_cosmetic"><a href="#" title="아우어와이 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_19.png" alt="아우어와이">
+              <div class="brand_gallery_hover">
+                <p>OURWHY</p>
+                <p>끊임없는 질문을 통해 아름다움의 지속을 위한 연결점을 제공하는 클린뷰티 라이프스타일 브랜드</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_makeup"><a href="#" title="글린트 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_20.png" alt="글린트">
+              <div class="brand_gallery_hover">
+                <p>Glint</p>
+                <p>누구나 눈부시게 빛나도록. 세상 모든 빛의 스펙트럼을 담은 글린트</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_cosmetic"><a href="#" title="예화담 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_21.png" alt="예화담">
+              <div class="brand_gallery_hover">
+                <p>YEHWADAM</p>
+                <p>최적의 산지에서 엄선한 자연 성분과 원료의 생명력을 고스란히 담은 한방 브랜드, 예화담</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_makeup"><a href="#" title="코드글로컬러 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_22.png" alt="코드글로컬러">
+              <div class="brand_gallery_hover">
+                <p>CODE GLOKOLOR</p>
+                <p>미니멀한 감성을 바탕으로 편안함을 선사하는
+                  실용 뷰티 브랜드</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_makeup"><a href="#" title="VDIVOV 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_23.png" alt="VDIVOV">
+              <div class="brand_gallery_hover">
+                <p>VDIVOV</p>
+                <p>과감하지만 웨어러블한 매력을 극대화하는 프로패셔널 메이크업 브랜드</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_collect"><a href="#" title="생활정원 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_24.png" alt="생활정원">
+              <div class="brand_gallery_hover">
+                <p>생활정원</p>
+                <p>자연, 과학, 건강에 대한노하우와 기술력을 담아 탄생시킨 프리미엄 건강기능식품 브랜드</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_makeup"><a href="#" title="fmgt 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_25.png" alt="fmgt">
+              <div class="brand_gallery_hover">
+                <p>fmgt</p>
+                <p>Fun but Meaningful , Gentle but Transformative</p>
+              </div>
+            </a>
+          </li>
+          <li class="brand_medical"><a href="#" title="CNP Rx 페이지 바로가기">
+              <img src="./images/brand/brand_cont_beautiful_26.png" alt="CNP Rx">
+              <div class="brand_gallery_hover">
+                <p>CNP Rx</p>
+                <p>피부를 가꾸는 것에서 피부를 바꾸는 것으로, 처방이 화장품이 되다</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <?php
+  include('footer.php');
+  ?>
+</body>
+
+</html>
